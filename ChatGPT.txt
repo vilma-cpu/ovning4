@@ -1,0 +1,96 @@
+Link to our conversation: https://chatgpt.com/share/69820bd9-22f0-8012-8a6f-b6cc1b4ea4e2 
+
+
+
+
+
+
+Our conversation in txt:
+
+----------------------- ME: -----------------------------
+ge mig en cheat sheet lista över allt i python som är bra att kunna för att göra dessa uppgifter: # ovning4 Skapa följande funktioner (en funktion per uppgift) create_file_from_string(my_filename, my_string) som skapar en fil med namnet my_filename (en sträng), och fyller den med innehållet i my_string (en sträng) Exempel på användning: create_file_from_string("min_superfil.txt", "hurra för mig") print_file_on_screen(my_filename) som öppnar filen med namnet my_filename (en sträng) och skriver ut innehållet på skärmen Exempel på användning: print_file_on_screen("min_superfil.txt")
+
+-------------------- CHAT GPT: --------------------------
+
+CHEAT SHEET – PYTHON FILHANTERING & FUNKTIONER
+
+OBS OM SYNTAX:
+----------------
+I Python måste kod INUTI en funktion vara indenterad.
+
+KORREKT:
+def funktionens_namn(param1, param2):
+    kod
+
+FEL (ingen indentering):
+def funktionens_namn(param1, param2):
+kod
+
+
+1. FUNKTIONER
+-------------
+Definiera:
+def namn(parametrar):
+    kod
+
+Anropa:
+namn(värde1, värde2)
+
+
+2. STRÄNGAR
+-----------
+"text"
+'text'
+Radbrytning: "\n"
+
+
+3. FILER
+--------
+Öppna fil:
+open(filnamn, läge)
+
+Lägen:
+"w" = write (skapa / skriv över)
+"r" = read (läs)
+"a" = append (lägg till)
+
+
+4. SKRIVA TILL FIL
+------------------
+with open("fil.txt", "w") as f:
+    f.write("text")
+
+
+5. LÄSA FRÅN FIL
+----------------
+with open("fil.txt", "r") as f:
+    innehåll = f.read()
+
+
+6. SKRIVA UT
+------------
+print("text")
+print(innehåll)
+
+
+7. EXEMPEL
+----------
+def create_file_from_string(my_filename, my_string):
+    with open(my_filename, "w") as f:
+        f.write(my_string)
+
+def print_file_on_screen(my_filename):
+    with open(my_filename, "r") as f:
+        print(f.read())
+
+
+8. CHECKLISTA
+-------------
+def
+indentering
+open()
+with
+"w" och "r"
+write()
+read()
+print()
